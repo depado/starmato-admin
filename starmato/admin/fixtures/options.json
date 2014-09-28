@@ -1,0 +1,60 @@
+[
+{ "model": "admin.starmatooption",
+  "pk": 1,
+  "fields": {
+	"option": "domain_name",
+	"value": ""
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 2,
+  "fields": {
+	"option": "project_name",
+	"value": "StarMaTo Administration"
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 3,
+  "fields": {
+	"option": "project_logo",
+	"value": ""
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 4,
+  "fields": {
+	"option": "def_color",
+	"value": "beige"
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 5,
+  "fields": {
+	"option": "def_iconset",
+	"value": "blackcubes"
+	}
+},
+
+{ "model": "admin.starmatooption",
+  "pk": 6,
+  "fields": {
+	"option": "def_lang",
+	"value": "fr_FR"
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 7,
+  "fields": {
+	"option": "def_currency",
+	"value": "EUR"
+	}
+},
+{ "model": "admin.starmatooption",
+  "pk": 8,
+  "fields": {
+	"option": "def_country",
+	"value": "FR"
+	}
+}
+
+]

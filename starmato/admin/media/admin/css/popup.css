@@ -1,0 +1,44 @@
+#confirm_popup {
+    position: absolute;
+    z-index: 50;
+    width: 400px;
+    height: 120px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px 5px #CCCCCC;
+    -moz-box-shadow: 0 0 5px 5px #CCCCCC;
+    -webkit-box-shadow: 0 0 5px 5px #CCCCCC;
+    top: 20px;
+}
+
+#confirm_popup .question_div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#confirm_popup input[type=button], #confirm_popup input[type=submit] {
+    float: right;
+    margin: 0px 10px 0 5px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+#confirm_popup .confirm_btn {
+    font-weight: bold;
+    border: 2px solid #333;
+    background: #6B737C !important;
+    color: white;
+}
+
+#confirm_popup textarea {
+    width: 300px;
+    height: 160px;
+}
+
+#confirm_popup input[type=text] {
+    width: 300px;
+}
+
+#confirm_popup select {
+    width: 308px;
+}

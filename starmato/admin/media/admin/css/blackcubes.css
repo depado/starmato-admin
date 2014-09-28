@@ -1,0 +1,159 @@
+/* FORM DEFAULTS */
+.submit-row {
+    background-image: url(../images/big_icon_save.gif) !important;
+    background-position: 10px 6px !important;
+    background-repeat: no-repeat !important;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active {
+    background-image: url(../images/nav-bg-reverse.gif);
+    background-position: top;
+}
+
+.button.default:active, input[type=submit].default:active {
+    background-image: url(../images/default-bg-reverse.gif);
+    background-position: top;
+}
+
+
+ul.messagelist li {
+    background-image: url(../images/icon_success.gif);
+    background-position: 5px .3em;
+    background-repeat: no-repeat;
+}
+
+ul.messagelist li.warning{
+    background-image: url(../images/icon_alert.gif);
+}
+
+ul.messagelist li.error{
+    background-image: url(../images/icon_error.gif);
+}
+
+.errornote {
+    background-image: url(../images/icon_error.gif);
+    background-position: 5px .3em;
+    background-repeat: no-repeat;
+}
+
+.errorlist li {
+    background-image: url(../images/icon_alert.gif);
+    background-position: 5px .3em ;
+    background-repeat: no-repeat;
+}
+
+div.system-message p.system-message-title {
+    background-image: url(../images/icon_error.gif);
+    background-position: 5px .3em;
+    background-repeat: no-repeat;
+}
+
+/* BREADCRUMBS */
+
+div.breadcrumbs {
+    background-image:  url(../images/nav-bg-reverse.gif);
+    background-position: 0 -10px;
+    background-repeat: repeat-x;
+}
+
+/* ACTION ICONS */
+
+.addlink {
+    background-image: url(../images/icon_addlink.gif);
+    background-position: 0 .2em;
+    background-repeat: no-repeat;
+}
+
+.changelink {
+    background-image: url(../images/icon_changelink.gif);
+    background-position: 0 .2em;
+    background-repeat: no-repeat;
+}
+
+.deletelink {
+    background-image: url(../images/icon_deletelink.gif);
+    background-position: 0 .25em;
+    background-repeat: no-repeat;
+}
+
+.object-tools li:hover {
+    background-image: url(../images/tool-left_over.gif);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.object-tools a:hover, .object-tools li:hover a {
+    background-image: url(../images/tool-right_over.gif);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+}
+
+.object-tools a.viewsitelink, .object-tools a.golink {
+    background-image: url(../images/tooltag-arrowright.gif);
+    background-position: top right ;
+    background-repeat: no-repeat;
+}
+
+.object-tools a.viewsitelink:hover, .object-tools a.golink:hover {
+    background-image: url(../images/tooltag-arrowright_over.gif);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.object-tools a.addlink {
+    background-image: url(../images/tooltag-add.gif);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.object-tools a.addlink:hover {
+    background-image: url(../images/tooltag-add_over.gif);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.shortcut-button input.add {
+    background-image: url(../images/big_icon_addlink.gif);
+    background-repeat: no-repeat;
+}
+
+.shortcut-button input.change {
+    background-image: url(../images/big_icon_menu.gif);
+    background-repeat: no-repeat;
+}
+
+.shortcut-button input.warning {
+    background-image: url(../images/big_icon_warning.gif);
+    background-repeat: no-repeat;
+}
+
+.shortcut-button input.review {
+    background-image: url(../images/big_icon_review.gif);
+    background-repeat: no-repeat;
+}
+
+
+/* starmato action button rows */
+.print-row {
+    background-image: url(../images/big_icon_print.gif) !important;
+    background-position: 10px 5px;
+    background-repeat: no-repeat !important;
+}
+
+.email-row {
+    background-image: url(../images/big_icon_email.gif) !important;
+    background-position: 10px 5px;
+    background-repeat: no-repeat !important;
+}
+
+.addressing-row {
+    background-image: url(../images/big_icon_addressing.gif) !important;
+    background-position: 10px 5px;
+    background-repeat: no-repeat !important;
+}
+
+.view-row {
+    background-image: url(../images/big_icon_public.gif) !important;
+    background-position: 10px 5px;
+    background-repeat: no-repeat !important;
+}

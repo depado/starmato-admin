@@ -1,0 +1,33 @@
+{% load index from starmato_admin %}
+
+<fieldset class="module aligned {{ fieldset.classes }}">
+{#    {% if fieldset.name %}<h2>{% if fieldset.name.name %}{{ fieldset.name.name }}{% else %}{{ fieldset.name }}{% endif %}</h2>{% endif %} #}
+    {% if fieldset.description %}
+        <div class="description">{{ fieldset.description|safe }}</div>
+    {% endif %}
+    {% with minwidth=fieldset.fields|length %}
+    {% for line in fieldset %}
+        <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}" style="clear:both;width:100%;">
+	  {% if fieldset.name.subtitles %}
+	  <div class="thead">{% index fieldset.name.subtitles forloop.counter0 %}</div>
+	  {% endif %}
+            {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
+            {% for field in line %}
+                <div class="field-box{% if not line.fields|length_is:'1' %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% endif %}">
+                    {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                        {{ field.field }}{{ field.label_tag }}
+                    {% else %}
+                        {{ field.label_tag }}
+                        {% if field.is_readonly %}
+                            <p>{{ field.contents }}</p>
+                        {% else %}
+                            {{ field.field }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    {% endwith %}
+</fieldset>

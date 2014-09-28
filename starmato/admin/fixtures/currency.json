@@ -1,0 +1,971 @@
+[
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "AED",
+	"rate": "3.66999949",
+	"name": "United Arab Emirates Dirham"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ALL",
+	"rate": "102.24902934",
+	"name": "Albanian Lek"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ANG",
+	"rate": "1.79118662",
+	"name": "Neth Antilles Guilder"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ARS",
+	"rate": "4.21829163",
+	"name": "Argentine Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "AUD",
+	"rate": "0.97528766",
+	"name": "Australian Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "AWG",
+	"rate": "1.80017634",
+	"name": "Aruba Florin"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BBD",
+	"rate": "2.00008246",
+	"name": "Barbadian Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BDT",
+	"rate": "75.60729192",
+	"name": "Bangladesh Taka"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BGN",
+	"rate": "1.4243956",
+	"name": "Bulgarian Lev"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BHD",
+	"rate": "0.37700094",
+	"name": "Bahraini Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BIF",
+	"rate": "1209.54785129",
+	"name": "Burundi Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BMD",
+	"rate": "1.00045029",
+	"name": "Bermuda Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BND",
+	"rate": "1.26715795",
+	"name": "Brunei Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BOB",
+	"rate": "6.92462678",
+	"name": "Bolivian Boliviano"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BRL",
+	"rate": "1.74615365",
+	"name": "Brazilian Real"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BSD",
+	"rate": "0.99986682",
+	"name": "Bahamian Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BTN",
+	"rate": "49.00744135",
+	"name": "Bhutan Ngultrum"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BYR",
+	"rate": "7253.10109212",
+	"name": "Belarus Ruble"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "BZD",
+	"rate": "1.98551662",
+	"name": "Belize Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CAD",
+	"rate": "1.01407772",
+	"name": "Canadian Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CHF",
+	"rate": "0.89701473",
+	"name": "Swiss Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CLP",
+	"rate": "483.61977545",
+	"name": "Chilean Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CNY",
+	"rate": "6.37015107",
+	"name": "Chinese Yuan"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "COP",
+	"rate": "1813.63163767",
+	"name": "Colombian Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CRC",
+	"rate": "518.1804661",
+	"name": "Costa Rica Colon"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "CZK",
+	"rate": "18.00999772",
+	"name": "Czech Koruna"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "DKK",
+	"rate": "5.40173454",
+	"name": "Danish Krone"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "DOP",
+	"rate": "38.17542881",
+	"name": "Dominican Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "DZD",
+	"rate": "73.26597026",
+	"name": "Algerian Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "EEK",
+	"rate": "11.98897707",
+	"name": "Estonian Kroon"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "EGP",
+	"rate": "5.96982163",
+	"name": "Egyptian Pound"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ETB",
+	"rate": "17.18613377",
+	"name": "Ethiopian Birr"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "EUR",
+	"rate": "0.72525495",
+	"name": "Euro"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "FJD",
+	"rate": "1.84168362",
+	"name": "Fiji Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "GBP",
+	"rate": "0.63379791",
+	"name": "British Pound"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "GMD",
+	"rate": "28.76719523",
+	"name": "Gambian Dalasi"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "GNF",
+	"rate": "7249.33322352",
+	"name": "Guinea Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "GTQ",
+	"rate": "7.85410107",
+	"name": "Guatemala Quetzal"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "HKD",
+	"rate": "7.77629253",
+	"name": "Hong Kong Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "HNL",
+	"rate": "18.8833006",
+	"name": "Honduras Lempira"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "HRK",
+	"rate": "5.41537536",
+	"name": "Croatian Kuna"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "HTG",
+	"rate": "40.28437757",
+	"name": "Haiti Gourde"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "HUF",
+	"rate": "213.27023123",
+	"name": "Hungarian Forint"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "IDR",
+	"rate": "7250.49884395",
+	"name": "Indonesian Rupiah"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ILS",
+	"rate": "3.62953156",
+	"name": "Israeli Sheqel"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "INR",
+	"rate": "48.98985842",
+	"name": "Indian Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "IQD",
+	"rate": "1208.4164761",
+	"name": "Iraqi Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "IRR",
+	"rate": "7248.75398187",
+	"name": "Iran Rial"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ISK",
+	"rate": "115.05958721",
+	"name": "Icelandic Krona"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "JMD",
+	"rate": "85.27945638",
+	"name": "Jamaican Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "JOD",
+	"rate": "0.70906189",
+	"name": "Jordanian Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "JPY",
+	"rate": "77.12800061",
+	"name": "Japanese Yen"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KES",
+	"rate": "99.33574501",
+	"name": "Kenyan Shilling"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KMF",
+	"rate": "362.57547056",
+	"name": "Comoros Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KRW",
+	"rate": "1208.58490399",
+	"name": "South Korean Won"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KWD",
+	"rate": "0.27555618",
+	"name": "Kuwaiti Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KYD",
+	"rate": "0.81941338",
+	"name": "Cayman Islands Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "KZT",
+	"rate": "148.01249533",
+	"name": "Kazakhstan Tenge"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "LBP",
+	"rate": "1450.52243393",
+	"name": "Lebanese Pound"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "LKR",
+	"rate": "109.89641778",
+	"name": "Sri Lankan Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "LSL",
+	"rate": "7.89245091",
+	"name": "Lesotho Loti"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "LTL",
+	"rate": "2.50454669",
+	"name": "Lithuanian Litas"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "LVL",
+	"rate": "0.51150456",
+	"name": "Latvian Lats"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MAD",
+	"rate": "8.14998099",
+	"name": "Moroccan Dirham"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MDL",
+	"rate": "11.6428327",
+	"name": "Moldovan Leu"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MKD",
+	"rate": "44.77460076",
+	"name": "Macedonian Denar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MNT",
+	"rate": "1208.60021794",
+	"name": "Mongolian Tugrik"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MOP",
+	"rate": "8.00397235",
+	"name": "Macau Pataca"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MRO",
+	"rate": "290.0640518",
+	"name": "Mauritania Ougulya"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MUR",
+	"rate": "28.89083952",
+	"name": "Mauritius Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MVR",
+	"rate": "15.33312001",
+	"name": "Maldives Rufiyaa"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MWK",
+	"rate": "164.83104803",
+	"name": "Malawi Kwacha"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MXN",
+	"rate": "13.29244709",
+	"name": "Mexican Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "MYR",
+	"rate": "3.09674313",
+	"name": "Malaysian Ringgit"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NAD",
+	"rate": "7.89979852",
+	"name": "Namibian Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NGN",
+	"rate": "164.81851589",
+	"name": "Nigerian Naira"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NIO",
+	"rate": "22.73359015",
+	"name": "Nicaragua Cordoba"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NOK",
+	"rate": "5.61341173",
+	"name": "Norwegian Krone"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NPR",
+	"rate": "77.98260721",
+	"name": "Nepalese Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "NZD",
+	"rate": "1.25047521",
+	"name": "New Zealand Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "OMR",
+	"rate": "0.38470068",
+	"name": "Omani Rial"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PAB",
+	"rate": "0.99949944",
+	"name": "Panamanian Balboa"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PEN",
+	"rate": "2.721011",
+	"name": "Peruvian Nuevo Sol"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PGK",
+	"rate": "2.17062567",
+	"name": "Papua New Guinea Kina"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PHP",
+	"rate": "43.17988516",
+	"name": "Philippine Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PKR",
+	"rate": "86.35977032",
+	"name": "Pakistani Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PLN",
+	"rate": "3.11947119",
+	"name": "Polish Zloty"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "PYG",
+	"rate": "3627.041518",
+	"name": "Paraguayan Guarani"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "QAR",
+	"rate": "3.63978021",
+	"name": "Qatari Riyal"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "RON",
+	"rate": "3.13813859",
+	"name": "Romanian Leu"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "RUB",
+	"rate": "30.72984977",
+	"name": "Russian Rouble"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "RWF",
+	"rate": "604.35371007",
+	"name": "Rwanda Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SAR",
+	"rate": "3.74599403",
+	"name": "Saudi Riyal"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SBD",
+	"rate": "7.38306983",
+	"name": "Solomon Islands Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SCR",
+	"rate": "12.63097319",
+	"name": "Seychelles Rupee"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SEK",
+	"rate": "6.64734722",
+	"name": "Swedish Krona"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SGD",
+	"rate": "1.26620933",
+	"name": "Singapore Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SKK",
+	"rate": "21.90843835",
+	"name": "Slovak Koruna"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SLL",
+	"rate": "3625.84659051",
+	"name": "Sierra Leone Leone"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SVC",
+	"rate": "8.73697882",
+	"name": "El Salvador Colon"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "SZL",
+	"rate": "7.89944817",
+	"name": "Swaziland Lilageni"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "THB",
+	"rate": "30.60115827",
+	"name": "Thai Baht"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TND",
+	"rate": "1.41043707",
+	"name": "Tunisian Dinar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TOP",
+	"rate": "1.72145202",
+	"name": "Tonga Paanga"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TRY",
+	"rate": "1.86000684",
+	"name": "Turkish Lira"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TTD",
+	"rate": "6.40552286",
+	"name": "Trinidad Tobago Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TWD",
+	"rate": "29.96301622",
+	"name": "Taiwan Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "TZS",
+	"rate": "1812.76250689",
+	"name": "Tanzanian Shilling"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "UAH",
+	"rate": "8.00336389",
+	"name": "Ukraine Hryvnia"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "UGX",
+	"rate": "2417.61398228",
+	"name": "Ugandan Shilling"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "USD",
+	"rate": "1",
+	"name": "United States Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "UYU",
+	"rate": "19.98028058",
+	"name": "Uruguayan New Peso"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "VUV",
+	"rate": "90.66052441",
+	"name": "Vanuatu Vatu"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "WST",
+	"rate": "2.28343513",
+	"name": "Samoa Tala"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "XAF",
+	"rate": "483.47990851",
+	"name": "Central African CFA franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "XCD",
+	"rate": "2.69798768",
+	"name": "East Caribbean Dollar"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "XOF",
+	"rate": "483.47990851",
+	"name": "West African CFA franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "XPF",
+	"rate": "85.32666907",
+	"name": "Pacific Franc"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "YER",
+	"rate": "213.31666635",
+	"name": "Yemen Riyal"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ZAR",
+	"rate": "7.94600176",
+	"name": "South African Rand"
+	}
+},
+{"model": "admin.currency",
+"pk": "",
+"fields": {
+	"code" : "ZMK",
+	"rate": "3620.04852493",
+	"name" : "Zambian Kwacha"
+	}
+}
+]
+

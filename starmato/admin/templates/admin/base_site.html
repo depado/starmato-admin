@@ -1,0 +1,38 @@
+{% extends "admin/base.html" %}
+{% load admin_static %}
+{% load url from future %}
+{% load starmato_options %}
+
+{% block extrastyle %}
+{% starmato_css %}
+{% endblock %}
+
+{% block extrahead %}
+<script type="text/javascript" src='{% static "admin/js/jquery-1.6.min.js" %}'></script>
+{% endblock %}
+
+{% block branding %}
+<div id="ajsonax"><img src='{% static "admin/images/ajax-loader.gif" %}' alt="loading" /></div>
+<div>
+  <img id="starmato" src='{% static "admin/images/starmato.png" %}' />
+  <h1>
+    <a id="home-link" onClick="location.href = '{% url 'admin:index' %}'; return false;">
+    {% starmato_branding %}
+    </a>
+  </h1>
+</div>
+{% endblock %}
+
+{% block userlinks %}
+{{ block.super }}
+<hr style="margin:5px 0;border-bottom:1px dotted grey;" />Liens directs :
+<a href="{% url 'admin:index' %}">
+  <b>Administration</b>
+</a> / 
+<a href="/">
+  <b>Site</b>
+</a>
+{% endblock %}
+
+{% block breadcrumbs %}
+{% endblock %}

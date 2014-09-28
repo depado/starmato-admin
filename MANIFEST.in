@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+recursive-include starmato/admin/ *
+recursive-include starmato/admin/templates *
+recursive-include starmato/admin/fixtures *
+recursive-include starmato/admin/templatetags *

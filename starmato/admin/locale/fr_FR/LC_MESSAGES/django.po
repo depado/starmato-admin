@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-07 15:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: filter.py:23
+msgid "From date"
+msgstr "Depuis le"
+
+#: filter.py:28
+msgid "To date"
+msgstr "Jusqu'au"
+
+#: models.py:25
+msgid "Option name"
+msgstr "Nom de l'option"
+
+#: models.py:25
+msgid "Option name must be less than 16 characters long"
+msgstr "Le nom de l'option doit contenir au maximum 16 caractères"
+
+#: models.py:26
+msgid "Option value"
+msgstr "Valeur de l'option"
+
+#: models.py:26
+msgid "Option value must be less than 200 characters long"
+msgstr "La valeur de l'option doit contenir au maximum 200 caractères"
+
+#: models.py:32
+msgid "Global option"
+msgstr "Option globale"
+
+#: models.py:33
+msgid "Global options"
+msgstr "Options globales"
+
+#: models.py:52
+msgid "Label"
+msgstr "Libellé"
+
+#: models.py:58
+msgid "Predefined label"
+msgstr "Libellé prédéfini"
+
+#: models.py:59
+msgid "Predefined labels"
+msgstr "Libellés prédéfinis"
+
+#: models.py:67
+msgid "Occurrences"
+msgstr "Occurrences"
+
+#: models.py:86
+msgid "Short name"
+msgstr "Nom court"
+
+#: models.py:87
+msgid "Long name"
+msgstr "Nom long"
+
+#: models.py:88
+msgid "Symbol"
+msgstr "Symbôle"
+
+#: models.py:89
+msgid "Rate"
+msgstr "Taux"
+
+#: models.py:116
+msgid "Currency"
+msgstr "Devise"
+
+#: models.py:117
+msgid "Currencies"
+msgstr "Devises"
+
+#: models.py:121
+msgid "639-1 code"
+msgstr "Code 639-1"
+
+#: models.py:122 models.py:134
+msgid "Name"
+msgstr "Nom"
+
+#: models.py:128
+msgid "Language"
+msgstr "Langue"
+
+#: models.py:129
+msgid "Languages"
+msgstr "Langues"
+
+#: models.py:133
+msgid "Code"
+msgstr "Code"
+
+#: models.py:135
+msgid "Official languages"
+msgstr "Langues officielles"
+
+#: models.py:136
+msgid "Phone country code"
+msgstr "Préfixe téléphonique"
+
+#: models.py:137
+msgid "National currency"
+msgstr "Devise nationale"
+
+#: models.py:138
+msgid "Member of the European Community"
+msgstr "Membre de la Communauté Européenne"
+
+#: models.py:144
+msgid "Country"
+msgstr "Pays"
+
+#: models.py:145
+msgid "Countries"
+msgstr "Pays"
+
+#: options.py:86
+msgid "Add Another"
+msgstr "Ajouter un autre"
+
+#: options.py:245
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was archived successfully."
+msgstr "L'enregistrement %(name)s \"%(obj)s\" a été correctement archivé."
+
+#: options.py:280
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was duplicated successfully."
+msgstr "L'enregistrement %(name)s \"%(obj)s\" a été correctement dupliqué."
+
+#: options.py:294
+msgid "You may edit the duplicated record below."
+msgstr "Vous pouvez modifié l'enregistrement dupliqué ci-dessous."
+
+#: reviewmerge.py:111 reviewmerge.py:113
+#, python-format
+msgid "%(name)s object with primary key %(key)r does not exist."
+msgstr "L'objet %(name)s avec la clé primaire %(key)r n'existe pas."
+
+#: reviewmerge.py:168
+#, python-format
+msgid "Review and merge %s"
+msgstr "Vérifier et valider %s"
+
+#: views.py:20
+#, python-format
+msgid ""
+"An important option (%s) is missing from your configuration. The software "
+"could get unstable. Please reset this option or contact your administrator."
+msgstr ""
+"Une option importante (%s) manque à votre configuration. Le logiciel peut "
+"devenir instable. Merci de réinitialiser cette option ou de contacter votre "
+"administrateur."
+
+#: views.py:35
+msgid "The software has been restarted."
+msgstr "Le logiciel a été redémarré."
+
+#: widgets.py:25 templates/admin/index.html:64
+msgid "Change"
+msgstr "Changer"
+
+#: templates/admin/change_form.html:35 templates/admin/change_list.html:40
+#: templates/admin/merge_form.html:32
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: templates/admin/change_form.html:51
+msgid "New record"
+msgstr "Nouvelle fiche"
+
+#: templates/admin/change_form.html:85 templates/admin/change_form.html:160
+#: templates/admin/merge_form.html:89
+msgid "Delete"
+msgstr "Supprimer"
+
+#: templates/admin/change_form.html:86 templates/admin/change_form.html:161
+#: templates/admin/merge_form.html:90
+msgid "Copy"
+msgstr "Dupliquer"
+
+#: templates/admin/change_form.html:88 templates/admin/change_form.html:166
+#: templates/admin/merge_form.html:54 templates/admin/merge_form.html.py:95
+msgid "Save and go back to menu"
+msgstr "Enregistrer et retourner au menu"
+
+#: templates/admin/change_form.html:89 templates/admin/change_form.html:167
+#: templates/admin/merge_form.html:55 templates/admin/merge_form.html.py:96
+#: templates/admin/pagination.html:15
+msgid "Save"
+msgstr "Enregistrer"
+
+#: templates/admin/change_form.html:97 templates/admin/change_list.html:137
+#: templates/admin/merge_form.html:62
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Merci de corriger l'erreur suivante."
+msgstr[1] "Merci de corriger les erreurs suivantes."
+
+#: templates/admin/change_form.html:165 templates/admin/merge_form.html:94
+msgid "Cancel changes"
+msgstr "Annuler les changements"
+
+#: templates/admin/change_form.html:203
+msgid "QUIT WITHOUT SAVING?"
+msgstr "QUITTER SANS SAUVEGARDER ?"
+
+#: templates/admin/change_list.html:44 templates/admin/index.html:51
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: templates/admin/change_list.html:50
+msgid "Create"
+msgstr "Créer"
+
+#: templates/admin/change_list.html:68
+msgid "List"
+msgstr ""
+
+#: templates/admin/change_list.html:87
+msgid "Field"
+msgstr "Champ"
+
+#: templates/admin/change_list.html:88
+msgid "Method"
+msgstr "Méthode"
+
+#: templates/admin/change_list.html:89
+msgid "Value"
+msgstr "Valeur"
+
+#: templates/admin/change_list.html:124
+#: templates/admin/daterange_filter.html:32
+msgid "Search"
+msgstr "Chercher"
+
+#: templates/admin/change_list.html:144
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: templates/admin/change_list.html:151
+msgid "Filter"
+msgstr "Filtrer"
+
+#: templates/admin/change_list_results.html:19
+msgid "Sorting priority"
+msgstr "Priorité de classement"
+
+#: templates/admin/change_list_results.html:20
+msgid "Remove from sorting"
+msgstr "Supprimer du classement"
+
+#: templates/admin/change_list_results.html:22
+msgid "Sort in descending order"
+msgstr "Classer par ordre décroissant"
+
+#: templates/admin/change_list_results.html:24
+#: templates/admin/change_list_results.html:27
+msgid "Sort in ascending order"
+msgstr "Classer par ordre croissant"
+
+#: templates/admin/daterange_filter.html:2 templates/admin/filter.html:2
+#, python-format
+msgid " By %(filter_title)s "
+msgstr "Par %(filter_title)s "
+
+#: templates/admin/daterange_filter.html:33
+msgid "Clear"
+msgstr ""
+
+#: templates/admin/index.html:47
+msgid "Advanced management"
+msgstr "Gestion avancée"
+
+#: templates/admin/index.html:52
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr "Modèles disponibles pour l'application %(name)s."
+
+#: templates/admin/index.html:58
+msgid "Add"
+msgstr "Ajouter"
+
+#: templates/admin/index.html:74
+msgid "Restart"
+msgstr "Redémarrer"
+
+#: templates/admin/index.html:78
+msgid "You don't have permission to edit anything."
+msgstr "Vous n'avez aucune autorisation."
+
+#: templates/admin/index.html:97
+msgid "Recent Actions"
+msgstr "Actions récentes"
+
+#: templates/admin/index.html:98
+msgid "My Actions"
+msgstr "Mes actions"
+
+#: templates/admin/index.html:102
+msgid "None available"
+msgstr "Aucune disponibilité"
+
+#: templates/admin/index.html:116
+msgid "Unknown content"
+msgstr "Contenu inconnu"
+
+#: templates/admin/merge_form.html:68
+msgid "Modified version (please check modifications before saving)"
+msgstr ""
+"Version modifiée (merci de vérifier les modifications avec de sauvegarder)"
+
+#: templates/admin/merge_form.html:75
+msgid "Current version"
+msgstr "Version actuelle"
+
+#: templates/admin/pagination.html:13
+msgid "Show all"
+msgstr "Tout montrer"
+
+#: templates/admin/edit_inline/mainbloc.html:21
+#: templates/admin/edit_inline/tabtabular.html:17
+msgid "Delete?"
+msgstr "Supprimer ?"
+
+#: templates/admin/edit_inline/mainbloc.html:33
+#: templates/admin/edit_inline/tabtabular.html:30
+msgid "View on site"
+msgstr "Voir sur le site"
+
+#: templates/admin/edit_inline/mainbloc.html:135
+#: templates/admin/edit_inline/merge.html:27
+#: templates/admin/edit_inline/tabtabular.html:135
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "Ajouter un nouvel enregistrement %(verbose_name)s"
+
+#: templates/admin/edit_inline/mainbloc.html:138
+#: templates/admin/edit_inline/merge.html:26
+#: templates/admin/edit_inline/tabtabular.html:138
+msgid "Remove"
+msgstr "Retirer"
+
+#: templates/admin/edit_inline/tabtabular.html:76
+msgid "Other actions"
+msgstr "Autres actions"
+
+#: templatetags/_logs.py:14
+msgid "Created on:"
+msgstr "Créé le :"
+
+#: templatetags/_logs.py:16
+msgid "Imported from former database"
+msgstr "Importé de la base de données précédente"
+
+#: templatetags/_logs.py:19
+msgid "Modified on:"
+msgstr "Modifié le :"
+
+#~ msgid "To"
+#~ msgstr "Au"
+
+#~ msgid "%s is not a defined starmato option"
+#~ msgstr "%s n'est pas une option starmato définie"
+
+#~ msgid ""
+#~ "Please select the list you want to add the selected %(objects_name)s to:"
+#~ msgstr ""
+#~ "Merci de choisir la liste à laquelle vous souhaitez ajouter les "
+#~ "%(objects_name)s :"
+
+#~ msgid "is"
+#~ msgstr "vaut"
+
+#~ msgid "contains"
+#~ msgstr "contient"
+
+#~ msgid "between"
+#~ msgstr "entre"
+
+#~ msgid "and"
+#~ msgstr "et"
+
+#~ msgid "Yes/True"
+#~ msgstr "Oui/Vrai"
+
+#~ msgid "No/False"
+#~ msgstr "Non/Faux"

@@ -1,0 +1,35 @@
+{% load i18n admin_static %}
+<h3>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</h3>
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+<style>
+    .calendarbox, .clockbox {
+        /* Make sure the calendar widget popover displays in front of the sidebar */
+        z-index: 1100;
+        margin-left: -251px;
+    }
+    .datetimeshortcuts a {
+        /* Make "Today" an icon. */
+        font-size: 16px;
+        color:rgba(0, 0, 0, 0) !important;
+	letter-spacing:-.35em;
+    }
+    .datetimeshortcuts a:first-child {
+	background:url({% static "admin/images/big_icon_today.gif" %}) 0 100% no-repeat;
+	background-size:16px 16px;
+    }
+    .datetimeshortcuts a:last-child {
+	background:url({% static "admin/images/big_icon_calendar.gif" %}) 0 100% no-repeat;
+	background-size:16px 16px;
+    }
+    .datetimeshortcuts a img {
+        opacity:0;
+    }
+</style>
+<form method="GET" action="">
+    {{ spec.form.media }}
+    {{ spec.form.as_p }}
+    <p>
+    <input type="submit" value="{% trans "Search" %}">
+    <input type="reset" value="{% trans "Clear" %}">
+    </p>
+</form>

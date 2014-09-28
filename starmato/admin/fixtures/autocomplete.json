@@ -1,0 +1,44 @@
+[
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Bureau"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Personnel"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Fax"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Portable"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Comptable"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Directeur"
+	}
+},
+{ "model": "base.autocomplete",
+  "pk": "",
+  "fields": {
+	"label": "Achats"
+	}
+}
+]

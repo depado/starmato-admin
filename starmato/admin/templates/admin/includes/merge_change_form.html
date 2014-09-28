@@ -1,0 +1,20 @@
+{% load starmato_admin_form %}
+{% load error_count from starmato_admin %}
+
+{% for fieldset in adminform|before_related %}
+  {% include "admin/includes/merge_fieldset.html" %}
+{% endfor %}
+
+    <div style="clear:both;"></div>
+
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% include "admin/edit_inline/merge.html" %}
+{% endfor %}
+    <div style="clear:both;"></div>
+
+{% for fieldset in adminform|after_related %}
+  {% include "admin/includes/merge_fieldset.html" %}
+{% endfor %}
+
+
+{% block after_fieldsets %}{% endblock %}

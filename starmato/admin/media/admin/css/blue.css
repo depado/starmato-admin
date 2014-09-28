@@ -1,0 +1,432 @@
+/*
+    DJANGO Admin styles
+*/
+
+body {
+    color: #333;
+    background: #fff;
+}
+
+a:link, a:visited {
+    color: #369;
+}
+
+a:hover {
+    color: black;
+}
+
+a.section:link, a.section:visited {
+    color: white;
+}
+
+h1 {
+    color: #666;
+}
+
+h3 {
+    color: #666;
+}
+
+h5 {
+    color: #666;
+}
+
+blockquote {
+    color: #777;
+}
+
+code, pre {
+    color: #666;
+}
+
+pre.literal-block {
+    background: #eee;
+}
+
+code strong {
+    color: #930;
+}
+
+hr {
+    color: #eee;
+    background-color: #eee;
+}
+
+input, select {
+    line-height: 1.3em;
+}
+.help, p.help {
+    color: #999;
+}
+
+.quiet, a.quiet:link, a.quiet:visited {
+    color: #999 !important;
+}
+
+.example {
+    background: #efefef;
+}
+
+thead th,
+tfoot td {
+    color: #FFF;
+    background: #000;
+}
+
+tr.row-label td {
+    color: #666;
+}
+
+tr.alt {
+    background: #f6f6f6;
+}
+.row1 {
+    background: #d5e3ed;
+}
+
+.row2 {
+    background: white;
+}
+
+.sold0 {
+    background: #ABABAB !important;
+}
+.inactive0 {
+    background: #ccddcc !important;
+}
+.booked0 {
+    background: #EDDF3F !important;
+}
+.sold1 {
+    background: #949494 !important;
+}
+.inactive1 {
+    background: #a0b1a0 !important;
+}
+.booked1 {
+    background: #DDCF3A !important;
+}
+/* SORTABLE TABLES */
+
+thead th a:link, thead th a:visited {
+    color: #666;
+}
+
+/* FORM DEFAULTS */
+.submit-row {
+    background-color: #d5e3ed !important;
+    padding-left: 40px !important;
+    margin: 30px 0 0 0 !important;
+}
+
+.login .submit-row {
+    background-color: #d5e3ed !important;
+    text-align:center;
+    padding: 10px 0 10px 0 !important;
+}
+
+.login input {
+    margin: 0 !important;
+}
+
+/* FORM BUTTONS */
+.button, input[type=submit], input[type=button], .submit-row input {
+    background: #abb3bc;
+    border: 2px solid #abb3bc;
+    color: black;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    border: 2px solid #333;
+    background: #6B737C;
+    color: white;
+}
+
+.button.additional, input[type=submit].additional, input[type=button].additional, .submit-row input.additional {
+    background: #FFF;
+    color: black;
+    border: 2px solid #abb3bc;
+}
+
+/* MODULES */
+
+.module {
+    border: 0px solid #ccc;
+    background: #d5e3ed;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    border-bottom: 5px solid white;
+    background: #abb3bc !important;
+    color: black !important;
+}
+
+
+/* MESSAGES & ERRORS */
+
+ul.messagelist li {
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    background-color: #ffc;
+}
+
+.errornote {
+    border: 1px solid red;
+    color: red;
+    background-color: #ffc;
+}
+
+.errorlist li {
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+}
+
+.errorlist li a {
+    color: white;
+}
+
+.errors {
+    background: #ffc;
+}
+
+.errors input, .errors select {
+    border: 1px solid red;
+}
+
+div.system-message {
+    background: #ffc;
+}
+
+div.system-message p.system-message-title {
+    color: red;
+    background-color: #ffc;
+}
+
+/* BREADCRUMBS */
+
+div.breadcrumbs {
+    background-color: white;
+    color: #999;
+    border-top: 0px solid white;
+    border-bottom: 0px solid #ccc;
+}
+
+/* ACTION ICONS */
+
+a.deletelink:link, a.deletelink:visited {
+    color: #CC3434;
+}
+
+a.deletelink:hover {
+    color: #993333;
+}
+
+/* OBJECT TOOLS */
+
+.object-tools li {
+    background: #B2BCAB;
+}
+
+.object-tools a:link, .object-tools a:visited {
+    color: white;
+}
+
+.object-tools a:hover, .object-tools li:hover a {
+    background-color: #5b80b2;
+}
+
+.object-tools a.viewsitelink, .object-tools a.golink {
+    background-color: #999;
+}
+
+.object-tools a.viewsitelink:hover, .object-tools a.golink:hover {
+    background-color: #5b80b2;
+}
+
+.object-tools a.addlink {
+    background-color: #999;
+}
+
+.object-tools a.addlink:hover {
+    background-color: #5b80b2;
+}
+
+/* PAGE STRUCTURE */
+
+.content-title {
+    color: #333;
+}
+
+.object-name {
+    background: #d5e3ed;
+}
+
+.object-button {
+    background: #abb3bc;
+}
+
+.object-logs {
+    background: #d5e3ed;
+}
+
+/* HEADER */
+
+#header {
+    background: #abb3bc;
+    color: black;
+}
+
+#header a:link, #header a:visited {
+    color: black;
+}
+
+#branding h1 {
+    color: red;
+}
+
+#branding h2 {
+    color: #ffc;
+}
+
+/* SIDEBAR */
+
+#content-related h3 {
+    color: #666;
+}
+
+#content-related .module h2 {
+    background: #eee;
+    color: #666;
+}
+
+/* INDEX.HTML REDEFINITION */
+
+.visible-applist {
+    background: #abb3bc !important;
+    color: black;
+}
+
+.shortcuts h1 {
+    background: #d5e3ed;
+}
+
+.shortcut-button {
+    background: #abb3bc;
+}
+
+.shortcut-large {
+    background: #abb3bc;
+}
+
+.shortcut-large input {
+    background: #abb3bc;
+}
+
+
+/* argamato */
+.print-row {
+    background-color: #d5e3ed !important;
+}
+
+.email-row {
+    background-color: #d5e3ed !important;
+}
+
+.addressing-row {
+    background-color: #d5e3ed !important;
+}
+
+.view-row {
+    background-color: #d5e3ed !important;
+}
+
+.highlight {
+    background-color: #f5f2cc;
+}
+.sold {
+    background-color: #f5f2cc;
+}
+.warning {
+    background-color: #abb3bc;
+}
+
+
+/* changelist toolbar */
+#changelist #toolbar {
+    background: none !important;
+    color: #666;
+}
+
+#changelist .actions {
+    background: white;
+}
+
+.changelist-advancedsearch-input {
+    background-color:black;
+}
+
+.reset-advanced-search {
+    border-right: 1px solid #CCC;
+}
+
+
+/* INLINES */
+.inline-tab {
+    border: 1px solid #CCC;
+}
+
+.inline-tab h2 {
+    background: white;
+    color: #666;
+}
+
+.current-tab h2 {
+   background: #abb3bc !important;
+   color: black !important;
+}
+
+.error-tab h2 {
+   background: red !important;
+   color: white !important;
+}
+
+/* HiddenFilteredSelectMultiple */
+.js_field {
+    background-color: #eeeeff;
+    border: 1px solid #C2C2C2;
+    color: #6C6C6C;
+}
+
+.extra_links p.title {
+    color: #FFF;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #000;
+}
+
+.disabled_header {
+    color: #CCCCCC;
+    background-color: #666666;
+}
+.disabled_div {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+    /* Netscape */
+    -moz-opacity: 0.5;
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+    /* Others */
+    opacity: 0.5;
+}
+
+.changelist_total {
+    background: #d5e3ed;
+}
+
+/* ARGAMATO LISTS */
+.ar-list {
+    background-color: #f5e2dd;
+}

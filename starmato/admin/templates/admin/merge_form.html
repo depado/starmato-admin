@@ -1,0 +1,117 @@
+{% extends "admin/base_site.html" %}
+{% load admin_static %}
+{% load short from starmato_admin %}
+{% load i18n admin_urls admin_modify %}
+
+{% block title %}{% trans "Merge" %}{{opts.verbose_name}}{% endblock %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+<script type="text/javascript" src='{% static "admin/js/Popups.js" %}'></script>
+<script type="text/javascript" src='{% static "admin/js/MergeForm.js" %}'></script>
+<script type="text/javascript">
+  var MEDIA_URL = "{{ MEDIA_URL }}admin/";
+</script>
+{{ media }}
+{% endblock %}
+
+{% load url from future %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/forms.css" %}' />
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/inline.css" %}' />
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/popup.css" %}' />
+{% endblock %}
+
+{% block coltype %}{% if ordered_objects %}colMS{% else %}colM{% endif %}{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% block content_title %}
+<div style="margin:20px 0 20px 0;">  
+  <a href="{% url 'admin:index' %}">
+    <span class="content-title object-button">
+      <img title="{% trans 'Main menu' %}" src='{% static "admin/images/big_icon_home.gif" %}' />
+    </span>
+  </a>
+  {% with "admin:"|add:opts.app_label|add:"_"|add:opts.object_name.lower|add:"_changelist" as list_url %}
+  <a href="{% url list_url %}">
+    <span class="content-title object-button">
+      <img src='{% static "admin/images/big_icon_menu.gif" %}' />
+    </span>
+  </a>
+  {% endwith %}
+  <span class="content-title object-name">
+    {{ old|short:40 }}
+  </span>
+  {% block extra_content_title %}
+  {% endblock %}
+</div>
+{% endblock %}
+
+{% block content %}<div id="content-main">
+<form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.module_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+{% if save_on_top %}
+<div class="submit-row clear save_on_top">
+  <input type="submit" value="{% trans 'Save and go back to menu' %}" name="_save" />
+  <input type="submit" value="{% trans 'Save' %}" name="_continue" class="default" />
+  <input type="hidden" value="" id="id_post_url_save" name="post_url_save">
+</div>
+{% endif %}
+<div>
+{% if errors %}
+    <p class="errornote">
+    {% blocktrans count errors|length as counter %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
+    </p>
+    {{ adminform.form.non_field_errors }}
+{% endif %}
+
+
+<div class="modified merger">
+  <h1>{% trans "Modified version (please check modifications before saving)" %}</h1>
+{% with adminform=adminform2 inline_admin_formsets=inline_admin_formsets2 %}
+  {% include "admin/includes/merge_change_form.html" %}
+{% endwith %}
+</div>
+
+<div class="old merger">
+  <h1>{% trans "Current version" %}</h1>
+{% with adminform=adminform inline_admin_formsets=inline_admin_formsets %}
+  {% include "admin/includes/merge_change_form.html" %}
+{% endwith %}
+</div>
+
+
+{% block action_row %}
+
+{% endblock %}
+
+{% block my_submit %}
+<div class="submit-row clear">
+  {% if original %}
+  <input type="button" value="{% trans 'Delete' %}" id="_delete" name="_delete" class="additional" />
+  <input type="submit" value="{% trans 'Copy' %}" id="_copy" name="_copy" class="additional" />
+  {% endif %}
+  {% block extra_submit %}
+  {% endblock %}
+  <input type="button" value="{% trans 'Cancel changes' %}" id="_cancel" name="_cancel" />
+  <input type="submit" value="{% trans 'Save and go back to menu' %}" name="_save" />
+  <input type="submit" value="{% trans 'Save' %}" name="_continue" class="default" />
+</div>
+{% endblock %}
+
+{% if adminform and add %}
+   <script type="text/javascript">document.getElementById("{{ adminform.first_field.auto_id }}").focus();</script>
+{% endif %}
+
+     {% block extra_js_at_end %}
+     {% endblock %}
+
+{# JavaScript for prepopulated fields #}
+{% prepopulated_fields_js %}
+
+</div>
+</form>
+</div>
+{% endblock %}

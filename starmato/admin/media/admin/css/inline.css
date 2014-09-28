@@ -1,0 +1,84 @@
+.hidden {
+    display: none;
+}
+
+.inline-tab {
+    float: left;
+    border-collapse: collapse;
+    margin: 0px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.inline-tab h2 {
+    margin: 0;
+    padding: 8px;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+.current-tab h2 {
+   padding: 8px 8px 6px 8px;
+   font-size: 13px;
+}
+
+.required {
+    font-weight: bold !important;
+}
+
+.main-bloc {
+    float: left;
+    margin-bottom: 20px !important;
+    width:100%;
+    border: none !important;
+}
+
+div.fix-width {
+    position: relative;
+    clear: left;
+    padding-left: 100px;
+    min-height: 3.2em;
+}
+
+label.fix-width {
+    position: absolute;
+    left: 0; 
+    top: 0.4em;
+    width: 100px;
+    float: left;
+}
+
+.fix-width .file-upload {
+    padding-left: 100px !important;
+}
+
+/* HiddenFilteredSelectMultiple */
+.auto_select {
+    readonly: readonly;
+    margin-right: 10px;
+    width: 220px;
+}
+
+.js_field {
+    border: 0 !important;
+}
+
+.extra_links {
+    margin-top: 10px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.extra_links p.title {
+    padding: 3px 0 0 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.extra_links p {
+    padding: 8px 0 8px 5px;
+    margin: 0;
+}

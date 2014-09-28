@@ -1,0 +1,128 @@
+{% extends "admin/base_site.html" %}
+{% load admin_static %}
+{% load i18n admin_urls %}
+{% load verbose from starmato_admin %}
+{% load url from future %}
+
+{% block title %}{% trans "Administration" %}{% endblock %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  {% if main_models %}
+  {% for model in main_models %}
+  <div class="shortcuts">
+    <h1>{{ model.name }}</h1>
+    {% if model.perms.add %}
+    <form method="link" action="{{ model.admin_url }}add/" class="shortcut-button">
+      <input type="submit" value="" class="add" />
+    </form>
+    {% endif %}
+    {% if model.perms.change %}
+    <form method="link" action="{{ model.admin_url }}" class="shortcut-button">
+      <input type="submit" value="" class="change" />
+    </form>
+    {% endif %}
+    {% for extra in model.extras %}
+    {% if forloop.counter0|divisibleby:"2" %}
+    <div style="clear: both;height:5px;"></div>
+    {% endif %}
+    <form method="link" action="{{ extra.url }}" class="shortcut-button">
+      <input type="submit" value="{{extra.value}}" class="{{extra.classes}}" />
+    </form>
+    {% endfor %}
+    <br />
+    <div style="clear: both"></div>
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>
+
+<div id="applist" class="shortcuts applist">
+  <h1 class="visible-applist">{% trans 'Advanced management' %}</h1>
+  {% if app_list %}
+  {% for app in app_list %}
+  <div class="shortcuts collapse">
+    <h1>{% blocktrans with app.name|verbose as name %}{{ name }}{% endblocktrans %}</h1>
+    <table summary="{% blocktrans with app.name as name %}Models available in the {{ name }} application.{% endblocktrans %}">
+      {% for model in app.models %}
+      <tr>
+        <th scope="row">{{ model.name }}</th>
+	
+        {% if model.perms.add %}
+        <td><a href="{{ model.admin_url }}add/" class="add" title="{% trans 'Add' %}"><img src="{% static "admin/images/icon_addlink.gif" %}" width="13" height="13" alt="Add" /></a></td>
+        {% else %}
+        <td>&nbsp;</td>
+        {% endif %}
+	
+        {% if model.perms.change %}
+        <td><a href="{{ model.admin_url }}" class="change" title="{% trans 'Change' %}"><img src="{% static "admin/images/icon_menu.gif" %}" width="13" height="13" alt="Change" /></a></td>
+        {% else %}
+        <td>&nbsp;</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {% endfor %}
+  <div class="shortcuts collapse">
+    <a href="{% url 'starmato.admin.views.wsgi_restart' %}"><h1 style="background-color:#f5e2dd">{% trans 'Restart' %}</h1></a>
+    (Superuser only)
+  </div>
+  {% else %}
+  <p>{% trans "You don't have permission to edit anything." %}</p>
+  {% endif %}
+</div>
+
+<script type="text/javascript">
+  jQuery(function() {
+    $('h1').click(function() {
+      $(this).toggleClass('visible-applist');
+      $($(this).parent()).find('div').each(function() {
+        $(this).toggleClass('collapse');
+      });
+    });
+  });
+</script>
+{% endblock %}
+
+{% block sidebar %}
+<div id="content-related">
+    <div class="module" id="recent-actions-module">
+        <h2>{% trans 'Recent Actions' %}</h2>
+        <h3>{% trans 'My Actions' %}</h3>
+            {% load log %}
+            {% get_admin_log 10 as admin_log for_user user %}
+            {% if not admin_log %}
+            <p>{% trans 'None available' %}</p>
+            {% else %}
+            <ul class="actionlist">
+            {% for entry in admin_log %}
+            <li class="{% if entry.is_addition %}addlink{% endif %}{% if entry.is_change %}changelink{% endif %}{% if entry.is_deletion %}deletelink{% endif %}">
+                {% if entry.is_deletion or not entry.get_admin_url %}
+                    {{ entry.object_repr }}
+                {% else %}
+                    <a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a>
+                {% endif %}
+                <br/>
+                {% if entry.content_type %}
+                    <span class="mini quiet">{% filter capfirst %}{% trans entry.content_type.name %}{% endfilter %}</span>
+                {% else %}
+                    <span class="mini quiet">{% trans 'Unknown content' %}</span>
+                {% endif %}
+            </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+    </div>
+</div>
+{% endblock %}
+

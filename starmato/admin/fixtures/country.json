@@ -1,0 +1,2140 @@
+[
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "US",
+	"name": "Etats-Unis",
+	"prefix": 1,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CA",
+	"name": "Canada",
+	"prefix": 1,
+	"languages": ["en", "fr"],
+	"currency": "CAD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AF",
+	"name": "Afghanistan",
+	"prefix": 93,
+	"languages": ["fa"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AL",
+	"name": "Albanie",
+	"prefix": 355,
+	"languages": ["sq"],
+	"currency": "ALL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DZ",
+	"name": "Algérie",
+	"prefix": 213,
+	"languages": ["ar"],
+	"currency": "DZD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AD",
+	"name": "Andorre",
+	"prefix": 376,
+	"languages": ["ca"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AO",
+	"name": "Angola",
+	"prefix": 244,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AG",
+	"name": "Antigua-et-Barbuda",
+	"prefix": 1268,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AR",
+	"name": "Argentine",
+	"prefix": 54,
+	"languages": ["es"],
+	"currency": "ARS"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AM",
+	"name": "Arménie",
+	"prefix": 374,
+	"languages": ["hy"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AU",
+	"name": "Australie",
+	"prefix": 61,
+	"languages": ["en"],
+	"currency": "AUD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AT",
+	"name": "Autriche",
+	"prefix": 43,
+	"languages": ["de"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AZ",
+	"name": "Azerbaïdjan",
+	"prefix": 994,
+	"languages": ["az"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BS",
+	"name": "Bahamas",
+	"prefix": 1242,
+	"languages": ["en"],
+	"currency": "BSD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BH",
+	"name": "Bahreïn",
+	"prefix": 973,
+	"languages": ["ar", "en"],
+	"currency": "BHD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BD",
+	"name": "Bangladesh",
+	"prefix": 880,
+	"languages": ["bn"],
+	"currency": "BDT"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BB",
+	"name": "Barbade",
+	"prefix": 1246,
+	"languages": ["en"],
+	"currency": "BBD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BY",
+	"name": "Biélorussie",
+	"prefix": 375,
+	"languages": ["be"],
+	"currency": "BYR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BE",
+	"name": "Belgique",
+	"prefix": 32,
+	"languages": ["nl", "fr", "de"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BZ",
+	"name": "Bélize",
+	"prefix": 501,
+	"languages": ["en"],
+	"currency": "BZD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BJ",
+	"name": "Bénin",
+	"prefix": 229,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BT",
+	"name": "Bhoutan",
+	"prefix": 975,
+	"languages": ["dz"],
+	"currency": "BTN"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BO",
+	"name": "Bolivie",
+	"prefix": 591,
+	"languages": ["es", "qu", "ay"],
+	"currency": "BOB"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BA",
+	"name": "Bosnie-Herzégovine",
+	"prefix": 387,
+	"languages": ["bs", "hr", "sr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BW",
+	"name": "Botswana",
+	"prefix": 267,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BR",
+	"name": "Brésil",
+	"prefix": 55,
+	"languages": ["pt"],
+	"currency": "BRL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BN",
+	"name": "Brunei Darussalam",
+	"prefix": 673,
+	"languages": ["ms"],
+	"currency": "BND"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BG",
+	"name": "Bulgarie",
+	"prefix": 359,
+	"languages": ["bg"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BF",
+	"name": "Burkina Faso",
+	"prefix": 226,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "BI",
+	"name": "Burundi",
+	"prefix": 257,
+	"languages": ["rn", "fr"],
+	"currency": "BIF"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KH",
+	"name": "Cambodge",
+	"prefix": 855,
+	"languages": ["km"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CM",
+	"name": "Cameroun",
+	"prefix": 237,
+	"languages": ["fr", "en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CV",
+	"name": "Cap-Vert",
+	"prefix": 238,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CF",
+	"name": "Afrique Centrale",
+	"prefix": 236,
+	"languages": ["fr", "sg"],
+	"currency": "XAF"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TD",
+	"name": "Tchad",
+	"prefix": 235,
+	"languages": ["fr", "ar"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CL",
+	"name": "Chili",
+	"prefix": 56,
+	"languages": ["es"],
+	"currency": "CLP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CN",
+	"name": "Chine",
+	"prefix": 86,
+	"languages": ["zh"],
+	"currency": "CNY"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CO",
+	"name": "Colombie",
+	"prefix": 57,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KM",
+	"name": "Comores",
+	"prefix": 269,
+	"languages": ["ar", "fr"],
+	"currency": "KMF"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CG",
+	"name": "Congo",
+	"prefix": 242,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CR",
+	"name": "Costa Rica",
+	"prefix": 506,
+	"languages": ["es"],
+	"currency": "CRC"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "HR",
+	"name": "Croatie",
+	"prefix": 385,
+	"languages": ["hr"],
+	"currency": "HRK"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CU",
+	"name": "Cuba",
+	"prefix": 53,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CY",
+	"name": "Chypre",
+	"prefix": 357,
+	"languages": ["el", "tr"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CZ",
+	"name": "République Tchèque",
+	"prefix": 420,
+	"languages": ["cs"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DK",
+	"name": "Danemark",
+	"prefix": 45,
+	"languages": ["da"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DJ",
+	"name": "Djibouti",
+	"prefix": 253,
+	"languages": ["fr", "ar"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DM",
+	"name": "Dominique",
+	"prefix": 1767,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DO",
+	"name": "République Dominicaine",
+	"prefix": 1,
+	"languages": ["es"],
+	"currency": "DOP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TP",
+	"name": "Timor Oriental",
+	"prefix": 670,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "EC",
+	"name": "Equateur",
+	"prefix": 593,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "EG",
+	"name": "Egypte",
+	"prefix": 20,
+	"languages": ["ar"],
+	"currency": "EGP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SV",
+	"name": "Le Salvador",
+	"prefix": 503,
+	"languages": ["es"],
+	"currency": "SVC"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GQ",
+	"name": "Guinée Equatoriale",
+	"prefix": 240,
+	"languages": ["es", "fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ER",
+	"name": "Erythrée",
+	"prefix": 291,
+	"languages": ["aa", "ar", "ti"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "EE",
+	"name": "Estonie",
+	"prefix": 372,
+	"languages": ["et"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ET",
+	"name": "Ethiopie",
+	"prefix": 251,
+	"languages": ["am", "ti"],
+	"currency": "ETB"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "FJ",
+	"name": "Fidji",
+	"prefix": 679,
+	"languages": ["en", "fj"],
+	"currency": "FJD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "FI",
+	"name": "Finlande",
+	"prefix": 358,
+	"languages": ["fi"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "FR",
+	"name": "France",
+	"prefix": 33,
+	"languages": ["fr"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GA",
+	"name": "Gabon",
+	"prefix": 241,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GM",
+	"name": "Gambie",
+	"prefix": 220,
+	"languages": ["en"],
+	"currency": "GMD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GE",
+	"name": "Géorgie",
+	"prefix": 995,
+	"languages": ["ka"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "DE",
+	"name": "Allemagne",
+	"prefix": 42,
+	"languages": ["de"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GH",
+	"name": "Ghana",
+	"prefix": 233,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GR",
+	"name": "Grèce",
+	"prefix": 30,
+	"languages": ["el"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GD",
+	"name": "Grenade",
+	"prefix": 1473,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GT",
+	"name": "Guatemala",
+	"prefix": 502,
+	"languages": ["es"],
+	"currency": "GTQ"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GN",
+	"name": "Guinée",
+	"prefix": 224,
+	"languages": ["fr"],
+	"currency": "GNF"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GW",
+	"name": "Guinée-Bissau",
+	"prefix": 245,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GY",
+	"name": "Guyane",
+	"prefix": 592,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "HT",
+	"name": "Haïti",
+	"prefix": 509,
+	"languages": ["ht", "fr"],
+	"currency": "HTG"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "HN",
+	"name": "Honduras",
+	"prefix": 504,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "HU",
+	"name": "Hongrie",
+	"prefix": 36,
+	"languages": ["hu"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IS",
+	"name": "Islande",
+	"prefix": 354,
+	"languages": ["is"],
+	"currency": "EUR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IN",
+	"name": "Inde",
+	"prefix": 91,
+	"languages": ["hi", "en", "bn", "sd", "ks", "ml", "or", "pa", "ta", "te", "ur", "kn", "as", "sa", "gu"],
+	"currency": "INR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ID",
+	"name": "Indonésie",
+	"prefix": 62,
+	"languages": ["id"],
+	"currency": "IDR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IR",
+	"name": "Iran",
+	"prefix": 98,
+	"languages": ["fa", "tr"],
+	"currency": "IRR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IQ",
+	"name": "Irak",
+	"prefix": 964,
+	"languages": ["ar", "ku"],
+	"currency": "IQD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IE",
+	"name": "Irlande",
+	"prefix": 353,
+	"languages": ["en", "ga"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IL",
+	"name": "Israël",
+	"prefix": 972,
+	"languages": ["he"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "IT",
+	"name": "Italie",
+	"prefix": 39,
+	"languages": ["it"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CI",
+	"name": "Côte d'Ivoire",
+	"prefix": 225,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "JM",
+	"name": "Jamaïque",
+	"prefix": 1876,
+	"languages": ["en"],
+	"currency": "JMD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "JP",
+	"name": "Japon",
+	"prefix": 81,
+	"languages": ["ja"],
+	"currency": "JPY"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "JO",
+	"name": "Jordanie",
+	"prefix": 962,
+	"languages": ["ar"],
+	"currency": "JOD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KZ",
+	"name": "Kazakhstan",
+	"prefix": 7,
+	"languages": ["kk"],
+	"currency": "KZT"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KE",
+	"name": "Kenya",
+	"prefix": 254,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KI",
+	"name": "Kiribati",
+	"prefix": 686,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KP",
+	"name": "RDP de Corée",
+	"prefix": 850,
+	"languages": ["ko"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KR",
+	"name": "République de Corée",
+	"prefix": 82,
+	"languages": ["ko"],
+	"currency": "KRW"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KW",
+	"name": "Koweït",
+	"prefix": 965,
+	"languages": ["ar"],
+	"currency": "KWD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KG",
+	"name": "Kyrgyzstan",
+	"prefix": 996,
+	"languages": ["ky", "ru"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LA",
+	"name": "Laos",
+	"prefix": 856,
+	"languages": ["lo"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LV",
+	"name": "Lettonie",
+	"prefix": 371,
+	"languages": ["lv"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LB",
+	"name": "Liban",
+	"prefix": 961,
+	"languages": ["ar"],
+	"currency": "LBP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LS",
+	"name": "Lesotho",
+	"prefix": 266,
+	"languages": ["en"],
+	"currency": "LSL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LR",
+	"name": "Liberia",
+	"prefix": 231,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LY",
+	"name": "Libye",
+	"prefix": 218,
+	"languages": ["ar"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LI",
+	"name": "Liechtenstein",
+	"prefix": 423,
+	"languages": ["de"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LT",
+	"name": "Lituanie",
+	"prefix": 370,
+	"languages": ["lt"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LU",
+	"name": "Luxembourg",
+	"prefix": 352,
+	"languages": ["lb", "fr", "de"],
+	"currency": "EUR",
+	"EU": 1	
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MK",
+	"name": "Macédoine",
+	"prefix": 389,
+	"languages": ["mk", "sq"],
+	"currency": "MKD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MG",
+	"name": "Madagascar",
+	"prefix": 261,
+	"languages": ["mg", "fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MW",
+	"name": "Malawi",
+	"prefix": 265,
+	"languages": ["ny"],
+	"currency": "MWK"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MY",
+	"name": "Malaisie",
+	"prefix": 60,
+	"languages": ["ms"],
+	"currency": "MYR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MV",
+	"name": "Maldives",
+	"prefix": 960,
+	"languages": ["dv"],
+	"currency": "MVR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ML",
+	"name": "Mali",
+	"prefix": 223,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MT",
+	"name": "Malte",
+	"prefix": 356,
+	"languages": ["mt", "rn"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MR",
+	"name": "Mauritanie",
+	"prefix": 222,
+	"languages": ["ar"],
+	"currency": "MRO"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MU",
+	"name": "Maurice",
+	"prefix": 230,
+	"languages": ["en"],
+	"currency": "MUR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MX",
+	"name": "Mexique",
+	"prefix": 52,
+	"languages": ["es"],
+	"currency": "MXN"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "FM",
+	"name": "Micronésie",
+	"prefix": 691,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MD",
+	"name": "Moldavie",
+	"prefix": 373,
+	"languages": ["mo"],
+	"currency": "MDL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MC",
+	"name": "Monaco",
+	"prefix": 377,
+	"languages": ["fr"],
+	"currency": "EUR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MN",
+	"name": "Mongolie",
+	"prefix": 976,
+	"languages": ["mn"],
+	"currency": "MNT"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MA",
+	"name": "Maroc",
+	"prefix": 212,
+	"languages": ["ar"],
+	"currency": "MAD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MZ",
+	"name": "Mozambique",
+	"prefix": 258,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "MM",
+	"name": "Birmanie",
+	"prefix": 95,
+	"languages": ["my"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NA",
+	"name": "Namibie",
+	"prefix": 264,
+	"languages": ["en"],
+	"currency": "NAD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NR",
+	"name": "Nauru",
+	"prefix": 674,
+	"languages": ["na"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NP",
+	"name": "Népal",
+	"prefix": 977,
+	"languages": ["ne"],
+	"currency": "NPR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NL",
+	"name": "Pays-Bas",
+	"prefix": 31,
+	"languages": ["nl", "fy"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NZ",
+	"name": "Nouvelle-Zélande",
+	"prefix": 64,
+	"languages": ["en", "mi"],
+	"currency": "NZD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NI",
+	"name": "Nicaragua",
+	"prefix": 505,
+	"languages": ["es"],
+	"currency": "NIO"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NE",
+	"name": "Niger",
+	"prefix": 227,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NG",
+	"name": "Nigeria",
+	"prefix": 234,
+	"languages": ["en"],
+	"currency": "NGN"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "NO",
+	"name": "Norvège",
+	"prefix": 47,
+	"languages": ["nb", "nn"],
+	"currency": "EUR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "OM",
+	"name": "Oman",
+	"prefix": 968,
+	"languages": ["ar"],
+	"currency": "OMR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PK",
+	"name": "Pakistan",
+	"prefix": 92,
+	"languages": ["ur", "en"],
+	"currency": "PKR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PW",
+	"name": "Palaos",
+	"prefix": 680,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PA",
+	"name": "Panama",
+	"prefix": 507,
+	"languages": ["es"],
+	"currency": "PAB"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PG",
+	"name": "Papouasie-Nouvelle-Guinée",
+	"prefix": 675,
+	"languages": ["ho"],
+	"currency": "PGK"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PY",
+	"name": "Paraguay",
+	"prefix": 595,
+	"languages": ["es", "gn"],
+	"currency": "PYG"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PE",
+	"name": "Pérou",
+	"prefix": 51,
+	"languages": ["es"],
+	"currency": "PEN"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PH",
+	"name": "Philippines",
+	"prefix": 63,
+	"languages": ["tl", "en"],
+	"currency": "PHP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PL",
+	"name": "Pologne",
+	"prefix": 48,
+	"languages": ["pl"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PT",
+	"name": "Portugal",
+	"prefix": 351,
+	"languages": ["pt"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "PR",
+	"name": "Porto Rico",
+	"prefix": 1,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "QA",
+	"name": "Qatar",
+	"prefix": 974,
+	"languages": ["ar"],
+	"currency": "QAR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "RO",
+	"name": "Roumanie",
+	"prefix": 40,
+	"languages": ["ro"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "RU",
+	"name": "Russie",
+	"prefix": 7,
+	"languages": ["ru"],
+	"currency": "RUB"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "RW",
+	"name": "Rwanda",
+	"prefix": 250,
+	"languages": ["rw", "fr", "en"],
+	"currency": "RWF"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "KN",
+	"name": "Saint-Christophe-et-Niévès",
+	"prefix": 1869,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LC",
+	"name": "Sainte-Lucie",
+	"prefix": 1758,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "VC",
+	"name": "Saint-Vincent-et-les-Grenadines",
+	"prefix": 1784,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "WS",
+	"name": "Samoa",
+	"prefix": 685,
+	"languages": ["sm"],
+	"currency": "WST"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SM",
+	"name": "Saint-Marin",
+	"prefix": 378,
+	"languages": ["it"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ST",
+	"name": "Sao Tomé-et-Principe",
+	"prefix": 239,
+	"languages": ["pt"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SA",
+	"name": "Arabie Saoudite",
+	"prefix": 966,
+	"languages": ["ar"],
+	"currency": "SAR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SN",
+	"name": "Sénégal",
+	"prefix": 221,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SC",
+	"name": "Seychelles",
+	"prefix": 248,
+	"languages": ["en", "fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SL",
+	"name": "Sierra Leone",
+	"prefix": 232,
+	"languages": ["en"],
+	"currency": "SLL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SG",
+	"name": "Singapour",
+	"prefix": 65,
+	"languages": ["zh", "ms", "en"],
+	"currency": "SGD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SK",
+	"name": "Slovaquie",
+	"prefix": 421,
+	"languages": ["sk"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SI",
+	"name": "Slovénie",
+	"prefix": 386,
+	"languages": ["sl"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SB",
+	"name": "Iles Salomon",
+	"prefix": 677,
+	"languages": ["en"],
+	"currency": "SBD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SO",
+	"name": "Somalie",
+	"prefix": 252,
+	"languages": ["so"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ZA",
+	"name": "Afrique du Sud",
+	"prefix": 27,
+	"languages": ["zu", "xh", "af", "en"],
+	"currency": "ZAR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ES",
+	"name": "Espagne",
+	"prefix": 34,
+	"languages": ["es"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "LK",
+	"name": "Sri Lanka",
+	"prefix": 94,
+	"languages": ["si", "ta"],
+	"currency": "LKR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SD",
+	"name": "Soudan",
+	"prefix": 249,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SR",
+	"name": "Suriname",
+	"prefix": 597,
+	"languages": ["nl"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SZ",
+	"name": "Swaziland",
+	"prefix": 268,
+	"languages": ["en", "ss"],
+	"currency": "SZL"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SE",
+	"name": "Suède",
+	"prefix": 46,
+	"languages": ["sv"],
+	"currency": "EUR",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "CH",
+	"name": "Suisse",
+	"prefix": 41,
+	"languages": ["de", "fr", "it"],
+	"currency": "EUR"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "SY",
+	"name": "Syrie",
+	"prefix": 963,
+	"languages": ["ar"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TW",
+	"name": "Taïwan",
+	"prefix": 886,
+	"languages": ["zh"],
+	"currency": "TWD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TJ",
+	"name": "Tadjikistan",
+	"prefix": 992,
+	"languages": ["tg"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TZ",
+	"name": "Tanzanie",
+	"prefix": 255,
+	"languages": ["sw", "en"],
+	"currency": "TZS"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TH",
+	"name": "Thaïlande",
+	"prefix": 66,
+	"languages": ["th", "en"],
+	"currency": "THB"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TG",
+	"name": "Togo",
+	"prefix": 228,
+	"languages": ["fr"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TO",
+	"name": "Tonga",
+	"prefix": 676,
+	"languages": ["to"],
+	"currency": "TOP"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TT",
+	"name": "Trinité-et-Tobago",
+	"prefix": 1868,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TN",
+	"name": "Tunisie",
+	"prefix": 216,
+	"languages": ["ar"],
+	"currency": "TTD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TR",
+	"name": "Turquie",
+	"prefix": 90,
+	"languages": ["tr"],
+	"currency": "TRY"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TM",
+	"name": "Turkménistan",
+	"prefix": 993,
+	"languages": ["tk"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "TV",
+	"name": "Tuvalu",
+	"prefix": 688,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "UG",
+	"name": "Ouganda",
+	"prefix": 256,
+	"languages": ["en"],
+	"currency": "UGX"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "UA",
+	"name": "Ukraïne",
+	"prefix": 380,
+	"languages": ["uk", "ru"],
+	"currency": "UAH"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "AE",
+	"name": "Emirats Arabes Unis",
+	"prefix": 971,
+	"languages": ["ar"],
+	"currency": "AED"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "GB",
+	"name": "Royaume-Uni",
+	"prefix": 44,
+	"languages": ["en"],
+	"currency": "GBP",
+	"EU": 1
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "UY",
+	"name": "Uruguay",
+	"prefix": 598,
+	"languages": ["es"],
+	"currency": "UYU"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "UZ",
+	"name": "Ouzbekistan",
+	"prefix": 998,
+	"languages": ["uz"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "VU",
+	"name": "Vanuatu",
+	"prefix": 678,
+	"languages": ["ml"],
+	"currency": "VUV"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "VA",
+	"name": "Vatican",
+	"prefix": 379,
+	"languages": ["it"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "VE",
+	"name": "Venezuela",
+	"prefix": 58,
+	"languages": ["es"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "VN",
+	"name": "Viêt nam",
+	"prefix": 84,
+	"languages": ["vi"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "EH",
+	"name": "Sahara Occidental",
+	"prefix": 0,
+	"languages": ["ar"],
+	"currency": "USD"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "YE",
+	"name": "Yemen",
+	"prefix": 967,
+	"languages": ["ar"],
+	"currency": "YER"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ZM",
+	"name": "Zambie",
+	"prefix": 260,
+	"languages": ["en"],
+	"currency": "ZMK"
+	}
+},
+
+{ "model": "admin.country",
+  "pk": "",
+  "fields": {
+	"code": "ZW",
+	"name": "Zimbabwe",
+	"prefix": 263,
+	"languages": ["en"],
+	"currency": "USD"
+	}
+}
+]

@@ -1,0 +1,202 @@
+{% extends "admin/base_site.html" %}
+{% load admin_static %}
+{% load short from starmato_admin %}
+{% load error_count from starmato_admin %}
+{% load starmato_admin_form %}
+{% load i18n admin_urls admin_modify %}
+
+{% block title %}{{opts.verbose_name}}{% if original %} {{ original }}{% endif %}{% endblock %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+<script type="text/javascript">
+  var MEDIA_URL = "{{ MEDIA_URL }}admin/";
+</script>
+{{ media }}
+{% endblock %}
+
+{% load url from future %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/forms.css" %}' />
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/inline.css" %}' />
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/popup.css" %}' />
+{% endblock %}
+
+{% block coltype %}{% if ordered_objects %}colMS{% else %}colM{% endif %}{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% block content_title %}
+<div class="top-menu">  
+{% if not is_popup %}
+  <a href="{% url 'admin:index' %}">
+    <span class="content-title object-button">
+      <img title="{% trans 'Main menu' %}" src='{% static "admin/images/big_icon_home.gif" %}' />
+    </span>
+  </a>
+  {% with "admin:"|add:opts.app_label|add:"_"|add:opts.object_name.lower|add:"_changelist" as list_url %}
+  <a href="{% url list_url %}">
+    <span class="content-title object-button">
+      <img src='{% static "admin/images/big_icon_menu.gif" %}' />
+    </span>
+  </a>
+  {% endwith %}
+{% endif %}
+  <span class="content-title object-name">
+    <span class="small">{{ opts.verbose_name }}</span>
+    {% if original %}
+      {{ original|short:40 }}
+    {% else %}
+      {% trans "New record" %}
+    {% endif %}
+  </span>
+  {% block extra_content_title %}
+  {% endblock %}
+  {% if original %}
+  <span class="object-logs">
+    {{ original|logs }}
+  </span>
+  {% with "admin:"|add:opts.app_label|add:"_"|add:opts.object_name.lower|add:"_change" as change_url %}
+  <a href="{% url change_url original.pk %}history/">
+    <span class="content-title object-button">
+      <img src='{% static "admin/images/big_icon_history.gif" %}' />
+    </span>
+  </a>
+  {% get_previous_and_next original as objects %}
+  {% for object in objects %}
+  {% if object %}
+  <a href="{{ object }}">
+    <span class="content-title object-button">
+      <img src='{% static "admin/images/big_icon_" %}{{forloop.counter}}.gif' />
+    </span>
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% endwith %}
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block content %}<div id="content-main">
+<form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.module_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+{% if save_on_top %}
+<div class="submit-row clear save_on_top">
+  {% if original %}
+  <input type="button" value="{% trans 'Delete' %}" id="_delete" name="_delete" class="additional" />
+  <input type="submit" value="{% trans 'Copy' %}" id="_copy" name="_copy" class="additional" />
+  {% endif %}
+  <input type="button" value="{% trans 'Cancel changes' %}" id="_cancel" name="_cancel" />
+  <input type="submit" value="{% trans 'Save and go back to menu' %}" name="_save" />
+  <input type="submit" value="{% trans 'Save' %}" name="_continue" class="default" />
+</div>
+{% endif %}
+<div>
+{% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
+{% if errors %}
+    <p class="errornote">
+    {% blocktrans count errors|length as counter %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
+    </p>
+    {{ adminform.form.non_field_errors }}
+{% endif %}
+
+{% for fieldset in adminform|before_related %}
+  {% include "admin/includes/fieldset.html" %}
+{% endfor %}
+
+    <div style="clear:both;"></div>
+
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% if inline_admin_formset.opts.inMainBloc %}
+	{% include inline_admin_formset.opts.template %}
+    {% endif %}
+{% endfor %}
+    <div style="clear:both;"></div>
+
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% if not inline_admin_formset.opts.inMainBloc and inline_admin_formset.opts.showTab %}
+    <div class="inline-tab{% if inline_admin_formset.opts.default %} current-tab{% endif %}{% if inline_admin_formset.formset.errors|error_count %} error-tab{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-tab">
+      <h2 onClick="javascript:change_tab('{% if inline_admin_formset.opts.activate %}{{ inline_admin_formset.opts.activate }}{% else %}{{ inline_admin_formset.formset.prefix }}{% endif %}');">
+	{% if inline_admin_formset.opts.max_num == 1 %}
+	{{ inline_admin_formset.opts.verbose_name|capfirst }}
+	{% else %}
+	{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}
+	{% endif %}
+	{{ inline_admin_formset.opts.pp }}
+      </h2>
+    </div>
+    {% endif %}
+{% endfor %}
+    <div style="clear:both;margin-bottom:-11px;height:1px;">&nbsp;</div>
+
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% if not inline_admin_formset.opts.inMainBloc %}
+	{% include inline_admin_formset.opts.template %}
+    {% endif %}
+{% endfor %}
+
+{% block after_related_objects %}{% endblock %}
+
+{% for fieldset in adminform|after_related %}
+  {% include "admin/includes/fieldset.html" %}
+{% endfor %}
+
+{% block after_fieldsets %}{% endblock %}
+
+{% block action_row %}
+{% if original %}
+    {% for action_row in adminform.model_admin.action_rows %}
+    <div class="submit-row clear {{ action_row.class }}">
+      {% for action in action_row.actions %}
+      <input type="button" value="{{ action.value }}" class="additional" onClick="location.href = '{{ action.url }}'" />
+      {% endfor %}
+    </div>
+    {% endfor %}
+{% endif %}
+{% endblock %}
+
+{% block my_submit %}
+<div class="submit-row clear">
+  {% if original %}
+  <input type="button" value="{% trans 'Delete' %}" id="_delete" name="_delete" class="additional" />
+  <input type="submit" value="{% trans 'Copy' %}" id="_copy" name="_copy" class="additional" />
+  {% endif %}
+  {% block extra_submit %}
+  {% endblock %}
+  <input type="button" value="{% trans 'Cancel changes' %}" id="_cancel" name="_cancel" />
+  <input type="submit" value="{% trans 'Save and go back to menu' %}" name="_save" />
+  <input type="submit" value="{% trans 'Save' %}" name="_continue" class="default" />
+  <input type="hidden" value="" id="id_post_url_save" name="post_url_save">
+</div>
+{% endblock %}
+
+{% if adminform and add %}
+   <script type="text/javascript">document.getElementById("{{ adminform.first_field.auto_id }}").focus();</script>
+{% endif %}
+
+{# JavaScript for prepopulated fields #}
+
+
+     {% block extra_js_at_end %}
+     {% endblock %}
+
+{% prepopulated_fields_js %}
+
+<script type="text/javascript">
+    {% if original %}
+    $(".submit-row #_delete").attr("onclick", "").click(function() {
+	{% with "admin:"|add:opts.app_label|add:"_"|add:opts.object_name.lower|add:"_delete" as del_url %}
+	location.href = "{% url del_url original.pk %}";
+	{% endwith %}
+    });
+    $(".submit-row #_cancel").attr("onclick", "").click(function() {
+	{% with "admin:"|add:opts.app_label|add:"_"|add:opts.object_name.lower|add:"_changelist" as list_url %}
+    createConfirmPopup("Oui", "Non", "location.href = '{% url list_url %}';", "return false;", "ANNULER LES CHANGEMENTS ?");
+	{% endwith %}
+    });
+    {% endif %}
+</script>
+</div>
+</form></div>
+{% endblock %}
