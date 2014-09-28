@@ -7,7 +7,6 @@ from django.template.defaultfilters import stringfilter
 from django.db.models import Q
 from django.db.models.sql.query import get_order_dir
 from django.contrib.admin.views.main import ChangeList
-from django.contrib.contenttypes.models import ContentType
 from django.http import QueryDict
 from django.core.urlresolvers import reverse
 #
@@ -27,8 +26,7 @@ def get_query_set(context, item):
         preserved_filters = context['preserved_filters']
         tmp = QueryDict(preserved_filters)
         request.GET = QueryDict(tmp.get("_changelist_filters"))
-    ct = ContentType.objects.get_for_model(item)
-    model = ct.model_class()
+    model = type(item)
     adm = site._registry[model]
     cl = ChangeList(request, model, [], [],
                     [], [], adm.search_fields, [],
