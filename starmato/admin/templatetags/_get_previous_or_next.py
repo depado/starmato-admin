@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-
+from datetime import datetime
+#
 from django.contrib.admin import site
 from django import template
 from django.http import HttpRequest
@@ -25,7 +26,16 @@ def get_query_set(context, item):
     if 'preserved_filters' in context:
         preserved_filters = context['preserved_filters']
         tmp = QueryDict(preserved_filters)
-        request.GET = QueryDict(tmp.get("_changelist_filters"))
+        d = {}
+        for k, v in QueryDict(tmp.get("_changelist_filters")).iteritems():
+            if len(v):
+                try:
+                    date = datetime.strptime(v, "%d/%m/%Y")
+                    d[k] = date.strftime("%Y-%m-%d")
+                except:
+                    d[k] = v
+        request.GET = d
+
     model = type(item)
     adm = site._registry[model]
     cl = ChangeList(request, model, [], [],
@@ -112,6 +122,7 @@ def get_next(context, item):
 
 def get_previous_and_next(context, item):
     qs, filters = get_query_set(context, item)
+    print qs
     return (get_next_or_previous(item, qs, filters, False), get_next_or_previous(item, qs, filters, True))
 
 #  <a href="{% url change_url object.pk %}">
