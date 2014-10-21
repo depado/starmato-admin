@@ -55,14 +55,15 @@ def get_next_or_previous(item, qs, filters, next):
     # django.db.sql.compiler
     if qs.query.extra_order_by:
         ordering = qs.query.extra_order_by
-    elif not qs.query.default_ordering:
+    elif qs.query.default_ordering:
         ordering = qs.query.order_by
     else:
-        ordering = qs.query.order_by or qs.query.model._meta.ordering
+        ordering = qs.query.model._meta.ordering
 
     assert not ordering == '?', 'This makes no sense for random ordering.'
 
-    for field in ordering:
+    # Ignore last field (pk)
+    for field in ordering[:len(ordering)-1]:
         query_filter = None
         if field[0] == '-':
             item_value = getattr(item, field[1:])
@@ -84,8 +85,10 @@ def get_next_or_previous(item, qs, filters, next):
 
         # Make sure we nicely or the conditions for the queryset
         query_filter = Q(**filter_dict)
+        print query_filter
         if query_filter is not None:
             qs = qs.filter(query_filter)
+        print qs.count()
 
     # Reverse the order if we're looking for previous items
     l = list(qs)
@@ -122,7 +125,6 @@ def get_next(context, item):
 
 def get_previous_and_next(context, item):
     qs, filters = get_query_set(context, item)
-    print qs
     return (get_next_or_previous(item, qs, filters, False), get_next_or_previous(item, qs, filters, True))
 
 #  <a href="{% url change_url object.pk %}">
