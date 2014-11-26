@@ -328,7 +328,7 @@ msgstr "Contenu inconnu"
 #: templates/admin/merge_form.html:68
 msgid "Modified version (please check modifications before saving)"
 msgstr ""
-"Version modifiée (merci de vérifier les modifications avec de sauvegarder)"
+"Version modifiée (merci de vérifier les modifications avant de sauvegarder)"
 
 #: templates/admin/merge_form.html:75
 msgid "Current version"
