@@ -40,7 +40,7 @@ class ReviewAndMergeSelectMultiple(SelectMultiple):
 
 class   ReviewAndMergeAdmin(StarmatoModelAdmin):
     def formfield_for_manytomany(self, db_field, request, **kwargs):
-        if "merge" in request.META["PATH_INFO"] and not 'widget' in kwargs:
+        if request.META["PATH_INFO"].endswith("merge/"):
             kwargs['widget'] = ReviewAndMergeSelectMultiple
         return super(ReviewAndMergeAdmin, self).formfield_for_manytomany(db_field, request, **kwargs)
 
