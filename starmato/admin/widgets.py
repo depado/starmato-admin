@@ -37,6 +37,7 @@ class CategorizedFilteredSelectMultiple(FilteredSelectMultiple):
     class Media:
         js = (settings.MEDIA_URL + "admin/js/core.js",
               settings.MEDIA_URL + "admin/js/SelectBox.js",
+              settings.MEDIA_URL + "admin/js/addevent.js",
               settings.MEDIA_URL + "admin/js/SelectFilter2.js")
 
     def __init__(self, verbose_name, is_stacked, attrs=None, choices=()):
