@@ -2,25 +2,25 @@
 <h3>{% blocktrans with title as filter_title %} By {{ filter_title }} {% endblocktrans %}</h3>
 {% if choices|slice:"8:" %}
 <ul class="admin-filter-{{ title|cut:' ' }}">
-    <script type="text/javascript">var go_from_select = function(opt) { window.location = window.location.pathname + opt };</script>
-    <li>
-    <select style="width: 95%;"
-        onchange="go_from_select(this.options[this.selectedIndex].value)">
-    {% for choice in choices %}
-        <option{% if choice.selected %} selected="selected"{% endif %}
-		  value="{{ choice.query_string|iriencode }}"
-		  {% if choice.classes %} class="{{choice.classes}}"{% endif %}>
-	  {{ choice.display }}
-	</option>
-    {% endfor %}
+  <script type="text/javascript">var go_from_select = function(opt) { window.location = window.location.pathname + opt };</script>
+  <li>
+    <select style="width: 95%;" onchange="go_from_select(this.options[this.selectedIndex].value)">
+      {% for choice in choices %}
+      <option{% if choice.selected %} selected="selected"{% endif %}
+		value="{{ choice.query_string|iriencode }}"
+		{% if choice.classes %} class="{{choice.classes}}"{% endif %}>
+	{{ choice.display }}
+      </option>
+      {% endfor %}
     </select>
-    </li>
+  </li>
+</ul>  
 {% else %}
 <ul>
-    {% for choice in choices %}
-            <li{% if choice.selected %} class="selected"{% endif %}>
-            <a href="{{ choice.query_string|iriencode }}">{{ choice.display }}</a></li>
-    {% endfor %}
-
-{% endif %}
+  {% for choice in choices %}
+  <li{% if choice.selected %} class="selected"{% endif %}>
+    <a href="{{ choice.query_string|iriencode }}">{{ choice.display }}</a>
+  </li>
+  {% endfor %}
 </ul>
+{% endif %}

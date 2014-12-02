@@ -40,8 +40,9 @@ class AdminSite(admin.AdminSite):
                     if model["name"] in self._main_models_extras:
                         model["extras"] = self._main_models_extras[model["name"]]
                         for extra in model["extras"]:
-                            info = (extra["model"]._meta.app_label, extra["model"]._meta.object_name.lower())
-                            extra["url"] = reverse('admin:%s_%s_changelist' % info)
+                            if "model" in extra and extra["model"] is not None:
+                                info = (extra["model"]._meta.app_label, extra["model"]._meta.object_name.lower())
+                                extra["url"] = reverse('admin:%s_%s_changelist' % info)
 
                     main_models.append(model)
         tr.context_data["main_models"] = main_models

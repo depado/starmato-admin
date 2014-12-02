@@ -77,6 +77,7 @@ $(document).ready(function() {
 		addMergeButtons($label, id);
 	    }
 	}
+	$old.attr("id", "old_"+$old.attr("id"));
     });
     var h1 = $(".old h1").html();
     $(".old h1").html($(".modified h1").html());
