@@ -61,13 +61,12 @@ $(document).ready(function() {
 	    }
 	} else if ($pend.attr("type") == "checkbox") {
 	    var tmp = $pend.prop("checked");
-	    $pend.removeAttr("name").prop("checked", $old.prop("checked"));
+	    $pend.prop("checked", $old.prop("checked"));
 	    $old.prop("checked", tmp);
 	    if ($pend.is(":checked") != $old.is(":checked")) {
 		$label = $(".old").find("label[for="+id+"]");
 		addMergeButtons($label, id);
 	    }
-
 	} else {
 	    $old.attr("data-copy", $pend.val());
 	    $pend.val($old.val()).attr("disabled", "disabled");
@@ -77,7 +76,7 @@ $(document).ready(function() {
 		addMergeButtons($label, id);
 	    }
 	}
-	$old.attr("id", "old_"+$old.attr("id"));
+	$pend.removeAttr("name").removeAttr("id");
     });
     var h1 = $(".old h1").html();
     $(".old h1").html($(".modified h1").html());
