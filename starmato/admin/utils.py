@@ -3,8 +3,9 @@ from django.core.urlresolvers import reverse
 from django.utils.safestring import mark_safe
 from django.templatetags.l10n import localize
 import locale
-#
-def     model_to_list(model, fields=['id', 'label'], empty_value=False):
+
+
+def model_to_list(model, fields=['id', 'label'], empty_value=False, case_insensitive=False):
     l = []
     if empty_value:
         l.append(('0', '------'))
@@ -13,12 +14,17 @@ def     model_to_list(model, fields=['id', 'label'], empty_value=False):
     for f in fields:
         cleanfields.append("`%s`" % f)
 
-    objs = list(model.objects.raw('SELECT %s FROM %s_%s' % (",".join(cleanfields), model._meta.app_label, model._meta.module_name)))
+    objs = list(model.objects.raw('SELECT %s FROM %s_%s' % (",".join(cleanfields),
+                                  model._meta.app_label, model._meta.module_name)))
 
     if model._meta.ordering:
         for order in model._meta.ordering:
             if order in fields:
-                objs.sort(key=lambda item:eval("item.%s" % order))
+                if case_insensitive:
+                    key = lambda item: eval("item.%s" % order).lower()
+                else:
+                    key = lambda item: eval("item.%s" % order)
+                objs.sort(key=key)
 
     try:
         for obj in objs:
@@ -27,7 +33,8 @@ def     model_to_list(model, fields=['id', 'label'], empty_value=False):
         pass
     return l
 
-def     model_to_array(model):
+
+def model_to_array(model):
     l = {}
     objs = model.objects.all()
 
